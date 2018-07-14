@@ -46,7 +46,7 @@ class SongsController < ApplicationController
     redirect_to songs_path
   end
 
-  Song Clean,ARTIST CLEAN,Release Year,COMBINED,First?,Year?,PlayCount,F*G
+  # Song Clean,ARTIST CLEAN,Release Year,COMBINED,First?,Year?,PlayCount,F*G
 
   def upload
     CSV.foreach(params[:songs].path, headers: true) do |song|
